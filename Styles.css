@@ -1,0 +1,753 @@
+.landingClass {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #161414; /* Light background color */
+  font-family: Arial, sans-serif;
+}
+
+
+
+.landing-page {
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.landingLogo {
+  max-width: 100%;
+  height: auto;
+  animation: bounce 3s infinite;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+  40% { transform: translateY(-30px); }
+  60% { transform: translateY(-15px); }
+}
+
+.landingClass {
+  margin: 0;
+  overflow: hidden;
+  background: linear-gradient(to bottom, rgb(1, 1, 84), #9e51e7);
+}
+
+.sparkle {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: #fff;
+  border-radius: 50%;
+  animation: sparkle-flicker 2s infinite alternate;
+}
+
+@keyframes sparkle-flicker {
+  0% {
+      opacity: 0.8;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 0.2;
+      transform: scale(1.2);
+  }
+}
+
+
+
+/*============================================================================================================*/
+
+
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* White background */
+  color: #000000; /* Black text */
+}
+
+/* Navigation Bar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000; /* Black background */
+  color: #ffffff; /* White text */
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
+  color: #fff; /* White text color for links */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #311919;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: #ffffff; /* Black text color for dropdown links */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 90px; /* Adjust as necessary */
+  margin-right: 10px;
+}
+
+.church-name {
+  color: #fff; /* White text color for church name */
+  font-weight: bold;
+  font-size: 1.2em;
+}
+nav-links {
+    margin-left: auto; /* Pushes the links to the right */
+  }
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #000000; /* White text */
+}
+
+.nav-links li a:hover {
+  text-decoration: underline;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #010101; /* Black background */
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content li {
+    padding: 10px;
+  }
+  
+  .dropdown-content li a {
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    display: block;
+  }
+  
+  .dropdown-content li a:hover {
+    background-color: #555555; /* Dark grey on hover */
+  }
+  
+  .menu-dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* Banner Section styles */
+.banner {
+    background-image: url('banner.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: #ffffff; /* White text */
+    padding: 100px 0;
+  }
+  
+  .banner-text {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .banner-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .banner-text p {
+    font-size: 1.2em;
+  }
+
+/* Main Content Area styles */
+.main-content {
+    padding: 20px;
+  }
+
+  .church-img{
+    width: 10px;
+    height: 10px;
+    
+  }
+  
+  .content-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .section-container {
+    
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .wave{
+    background-image: url('vector.png'); /* Replace with your image path */
+    background-size:60% ;
+    background-position: center;
+    
+
+  }
+  
+  .section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #000000; /* Black border */
+    border-radius: 5px;
+    background-color: #ffffff; /* White background */
+    margin-right: 20px; /* Space between sections */
+  }
+
+  .welcome-message{
+    text-align: center;
+  }
+
+  .core-values{
+    text-align: center;
+  } 
+  
+  .container-branch {
+    width: 80%;
+    margin: 20px auto;
+}
+
+.branches-box, .partner-box {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.heading {
+    text-align: center;
+    color: #000;
+}
+
+.branch-boxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.branch {
+    background-color: #bb79f0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.partner-options {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.partner-options li {
+    background-color: #f8f8f8;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.banking-details {
+    margin-top: 20px;
+}
+  
+
+
+
+  .section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .section p {
+    font-size: 1.1em;
+  }
+
+  .location{
+    text-align:end;
+  }
+
+  .contact-information{
+    text-align: left;
+  }
+
+  .contact-us {
+    padding: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  padding: 20px;
+  background-color: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ 
+}
+
+.contact-details {
+    flex: 1;
+}
+
+.contact-info h2 {
+  text-align: center;
+  margin-bottom: 10px; /* Add space between heading and underline */
+
+  line-height: 1; /* Adjust line height for better spacing */
+}
+
+.line {
+
+  border-bottom: 3px solid #000000;
+ 
+}
+
+
+.map {
+    flex: 1;
+    text-align: center;
+}
+
+.map img {
+    max-width: 100%;
+    height: auto;
+   
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  height: 30px;
+  width: auto; /* Maintain aspect ratio */
+}
+
+
+
+/* Footer styles */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-info,
+  .write-to-us,
+  .service-time {
+    flex: 1;
+    margin: 10px;
+  }
+
+  .contact-info p {
+    margin-bottom: 5px;
+  }
+  
+  .contact-info i {
+    margin-right: 10px;
+  }
+  
+  .write-to-us form {
+    margin-top: 10px;
+  }
+  
+  .write-to-us textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+  }
+  
+  .write-to-us button {
+    background-color: #000000; /* Black background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .write-to-us button:hover {
+    opacity: 0.8;
+  }
+  
+  .write-to-us button:focus {
+    outline: none;
+  }
+
+  .sermons {
+    padding: 20px;
+}
+
+.video-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.video-item {
+  flex: 1 1 calc(50% - 20px); /* Two videos per row with 20px gap */
+  max-width: calc(50% - 20px);
+  margin-bottom: 20px;
+}
+
+.video-box {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  display: flex; /* Ensure contents inside video-box are flex items */
+  flex-direction: column; /* Stack content (iframe and video-info) vertically */
+}
+
+.video-box iframe {
+  width: 100%;
+  height: 100%; /* Adjust height as needed */
+  border: none;
+}
+
+.video-info {
+  background-color: #fff;
+  
+}
+
+.video-info h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+
+.video-info p {
+  margin-top: 0;
+  color: #666;
+}
+
+.see-more {
+  background-color: transparent;
+  color: #007bff;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font-size: 1em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.see-more:hover {
+  color: #0056b3;
+}
+
+.arrow.down {
+  margin-left: 5px;
+  
+}
+
+
+.see-more {
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 1em;
+    display: inline-flex;
+    align-items: center;
+}
+
+.see-more:hover {
+    color: #0056b3;
+}
+
+.arrow.down {
+    margin-left: 5px;
+}
+
+
+
+.hidden {
+    display: none;
+}
+
+
+.sermon-notes a {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    background-color: #bb79f0;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.sermon-notes a:hover {
+    background-color: #bb79f0;
+}
+
+.sermon-audio {
+    text-align: center;
+}
+
+.audio-links a {
+    display: inline-block;
+    margin: 0 10px;
+    background-color: #bb79f0;
+    color: #212529;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.audio-links a:hover {
+    background-color: #bb79f0;
+}
+
+/*Membership Form*/
+/*========================================================================================================================*/
+
+
+/* Form container styles */
+.form-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.member-intro{
+  text-align: center;
+
+}
+.form-heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.membership-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-columns {
+  display: flex;
+  gap: 20px;
+}
+
+.form-column {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .form-columns {
+      flex-direction: column;
+  }
+}
+
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.gender-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.submit-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #333;
+}
+
+.calendar-icon {
+  position: relative;
+  top: 6px;
+  cursor: pointer;
+}
+
+.calendar-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #ccc;
+}
+
+/*===================================================================================================*/
+ #ministriesList {
+  max-width: 600px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#ministriesList div {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+#ministriesList div:last-child {
+  border-bottom: none;
+}
+
+
+/*==================================================================================================================*/
+.containerSun {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px #ddd;
+  
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.images img {
+  width: "200px" ;
+  height: "200px";
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.content {
+  text-align: left;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.section-container {
+    
+  display: flex;
+  justify-content: space-between;
+  color: #bb79f0;
+  background-image: url('vector.png'); /* Replace with your image path */
+    background-size:60% ;
+    background-position: center;
+}
+
+.corevalues{
+  text-align: left;
+} 
